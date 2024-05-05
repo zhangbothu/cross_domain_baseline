@@ -10,7 +10,7 @@ import random
 
 import json
 
-name = 'sider'
+name = 'tox21'
 
 
 f = open(os.path.join(BASE_DIR, '{}/raw/{}.csv'.format(name,name)), 'r').readlines()[1:]

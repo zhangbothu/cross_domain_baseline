@@ -45,7 +45,7 @@ class Interact_attention(nn.Module):
 
 class Meta_model(nn.Module):
     def __init__(self, args):
-        super(Meta_model, self).__init__()
+        super(Meta_model,self).__init__()
 
         self.dataset = args.dataset
         self.num_tasks = args.num_tasks
@@ -73,14 +73,16 @@ class Meta_model(nn.Module):
         self.update_step = args.update_step
         self.update_step_test = args.update_step_test
 
-        self.criterion = nn.BCEWithLogitsLoss()
-        
-        self.graph_model = GNN_graphpred(args.num_layer, args.emb_dim, 1, JK = args.JK, drop_ratio = args.dropout_ratio, graph_pooling = args.graph_pooling, gnn_type = args.gnn_type)
+        # self.criterion = nn.BCEWithLogitsLoss()
+        self.criterion = nn.CrossEntropyLoss()
+
+        self.graph_model = GNN_graphpred(args.num_layer, args.emb_dim, 3, JK = args.JK, drop_ratio = args.dropout_ratio, graph_pooling = args.graph_pooling, gnn_type = args.gnn_type)
         if not args.input_model_file == "":
             self.graph_model.from_pretrained(args.input_model_file)
 
         if self.add_selfsupervise:
             self.self_criterion = nn.BCEWithLogitsLoss()
+            # self.self_criterion = nn.CrossEntropyLoss()
 
         if self.add_masking:
             self.masking_criterion = nn.CrossEntropyLoss()
@@ -92,7 +94,7 @@ class Meta_model(nn.Module):
         if self.interact:
             self.softmax = nn.Softmax(dim=0)
             self.Interact_attention = Interact_attention(self.emb_dim, self.num_train_tasks)
-            
+
         model_param_group = []
         model_param_group.append({"params": self.graph_model.gnn.parameters()})
         if args.graph_pooling == "attention":
@@ -104,10 +106,10 @@ class Meta_model(nn.Module):
 
         if self.add_similarity:
             model_param_group.append({"params": self.Attention.parameters()})
-            
+
         if self.interact:
             model_param_group.append({"params": self.Interact_attention.parameters()})
-        
+
         self.optimizer = optim.Adam(model_param_group, lr=args.meta_lr, weight_decay=args.decay)
 
         # for name, para in self.named_parameters():
@@ -122,14 +124,14 @@ class Meta_model(nn.Module):
     def build_negative_edges(self, batch):
         font_list = batch.edge_index[0, ::2].tolist()
         back_list = batch.edge_index[1, ::2].tolist()
-        
+
         all_edge = {}
         for count, front_e in enumerate(font_list):
             if front_e not in all_edge:
                 all_edge[front_e] = [back_list[count]]
             else:
                 all_edge[front_e].append(back_list[count])
-        
+
         negative_edges = []
         for num in range(batch.x.size()[0]):
             if num in all_edge:
@@ -156,6 +158,7 @@ class Meta_model(nn.Module):
 
         for task in range(self.num_train_tasks):
         # for task in tasks_list:
+            # MoleculeDataset子图的数量
             dataset = MoleculeDataset("Original_datasets/" + self.dataset + "/new/" + str(task+1), dataset = self.dataset)
             support_dataset, query_dataset = sample_datasets(dataset, self.dataset, task, self.n_way, self.m_support, self.k_query)
             support_loader = DataLoader(support_dataset, batch_size=self.batch_size, shuffle=False, num_workers = 1)
@@ -182,8 +185,8 @@ class Meta_model(nn.Module):
                     batch = batch.to(device)
 
                     pred, node_emb = self.graph_model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
-                    y = batch.y.view(pred.shape).to(torch.float64)
-                                
+                    y = batch.y.to(torch.long)
+
                     loss = torch.sum(self.criterion(pred.double(), y)) /pred.size()[0]
 
                     if self.add_selfsupervise:
@@ -210,7 +213,7 @@ class Meta_model(nn.Module):
                     if task == 0:
                         tasks_emb = []
                     tasks_emb.append(one_task_emb)
-                
+
                 new_grad, new_params = self.update_params(losses_s, update_lr = self.update_lr)
 
                 vector_to_parameters(new_params, self.graph_model.parameters())
@@ -220,7 +223,7 @@ class Meta_model(nn.Module):
                     batch = batch.to(device)
 
                     pred, node_emb = self.graph_model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
-                    y = batch.y.view(pred.shape).to(torch.float64)
+                    y = batch.y.to(torch.long)
 
                     loss_q = torch.sum(self.criterion(pred.double(), y))/pred.size()[0]
 
@@ -254,7 +257,7 @@ class Meta_model(nn.Module):
                         tasks_emb_new = one_task_e
                     else:
                         tasks_emb_new = torch.cat((tasks_emb_new, one_task_e), 0)
-                
+
                 tasks_emb_new = torch.reshape(tasks_emb_new, (self.num_train_tasks, self.emb_dim))
                 tasks_emb_new = tasks_emb_new.detach()
 
@@ -281,18 +284,18 @@ class Meta_model(nn.Module):
                 print(losses_q)
 
                 # tasks_emb_new = tasks_emb_new * torch.reshape(represent_emb_m, (self.batch_size, self.emb_dim))
-                
+
                 losses_q = torch.sum(losses_q * torch.transpose(self.softmax(tasks_weight), 1, 0))
                 print(losses_q)
 
             else:
                 losses_q = torch.sum(losses_q)
-            
-            loss_q = losses_q / self.num_train_tasks       
+
+            loss_q = losses_q / self.num_train_tasks
             self.optimizer.zero_grad()
             loss_q.backward()
             self.optimizer.step()
-        
+
         return []
 
     def test(self, support_grads):
@@ -315,7 +318,7 @@ class Meta_model(nn.Module):
                     batch = batch.to(device)
 
                     pred, node_emb = self.graph_model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
-                    y = batch.y.view(pred.shape).to(torch.float64)
+                    y = batch.y.to(torch.long)
 
                     loss += torch.sum(self.criterion(pred.double(), y))/pred.size()[0]
 
@@ -342,7 +345,7 @@ class Meta_model(nn.Module):
                 #     new_params = self.update_similarity_params(new_grad, support_grads)
 
                 vector_to_parameters(new_params, self.graph_model.parameters())
-                
+
 
             y_true = []
             y_scores = []
@@ -351,22 +354,31 @@ class Meta_model(nn.Module):
 
                 pred, node_emb = self.graph_model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
                 # print(pred)
-                pred = F.sigmoid(pred)
-                pred = torch.where(pred>0.5, torch.ones_like(pred), pred)
-                pred = torch.where(pred<=0.5, torch.zeros_like(pred), pred)
+                # pred = F.sigmoid(pred)
+                # pred = torch.where(pred>0.5, torch.ones_like(pred), pred)
+                # pred = torch.where(pred<=0.5, torch.zeros_like(pred), pred)
+                pred = F.softmax(pred, 1)
                 y_scores.append(pred)
-                y_true.append(batch.y.view(pred.shape))
-                
+                y_true.append(batch.y.to(torch.long))
+
 
             y_true = torch.cat(y_true, dim = 0).cpu().detach().numpy()
             y_scores = torch.cat(y_scores, dim = 0).cpu().detach().numpy()
-           
+
             roc_list = []
-            roc_list.append(roc_auc_score(y_true, y_scores))
+            for i in range(self.n_way):
+                y_true_binary = np.where(y_true == i, 1, 0)  # 将当前类别设为正例，其他类别设为负例
+                y_pred_proba = y_scores[:, i]  # 当前类别的预测概率
+                try:
+                    score = roc_auc_score(y_true_binary, y_pred_proba)
+                    roc_list.append(score)
+                except ValueError:
+                    pass
+            # roc_list.append(roc_auc_score(y_true, y_scores, average='macro'))
             acc = sum(roc_list)/len(roc_list)
             accs.append(acc)
 
             vector_to_parameters(old_params, self.graph_model.parameters())
 
         return accs
-        
+

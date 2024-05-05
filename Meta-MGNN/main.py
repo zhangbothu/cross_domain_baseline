@@ -20,7 +20,7 @@ def main(dataset, input_model_file, gnn_type, add_similarity, add_selfsupervise,
     parser = argparse.ArgumentParser(description='PyTorch implementation of pre-training of graph neural networks')
     parser.add_argument('--device', type=int, default=0,
                         help='which gpu to use if any (default: 0)')
-    parser.add_argument('--batch_size', type=int, default=5,
+    parser.add_argument('--batch_size', type=int, default=40,
                         help='input batch size for training (default: 32)') 
     parser.add_argument('--epochs', type=int, default=2000,
                         help='number of epochs to train (default: 100)')
@@ -48,14 +48,14 @@ def main(dataset, input_model_file, gnn_type, add_similarity, add_selfsupervise,
     parser.add_argument('--runseed', type=int, default=0, help = "Seed for minibatch selection, random initialization.")
     parser.add_argument('--split', type = str, default="scaffold", help = "random or scaffold or random_scaffold")
     parser.add_argument('--eval_train', type=int, default = 0, help='evaluating training or not')
-    parser.add_argument('--num_workers', type=int, default = 4, help='number of workers for dataset loading')
+    parser.add_argument('--num_workers', type=int, default = 0, help='number of workers for dataset loading')
 
     parser.add_argument('--num_tasks', type=int, default=11, help = "# of tasks")
     parser.add_argument('--num_train_tasks', type=int, default=9, help = "# of training tasks")
     parser.add_argument('--num_test_tasks', type=int, default=2, help = "# of testing tasks")
     parser.add_argument('--n_way', type=int, default=3, help = "n_way of dataset")
-    parser.add_argument('--m_support', type=int, default=10, help = "size of the support dataset")
-    parser.add_argument('--k_query', type = int, default=16, help = "size of querry datasets")
+    parser.add_argument('--m_support', type=int, default=16, help = "size of the support dataset")
+    parser.add_argument('--k_query', type = int, default=10, help = "size of querry datasets")
     parser.add_argument('--meta_lr', type=float, default=0.001) 
     parser.add_argument('--update_lr', type=float, default=0.4) #0.4
     parser.add_argument('--update_step', type=int, default=5) #5
@@ -91,8 +91,7 @@ def main(dataset, input_model_file, gnn_type, add_similarity, add_selfsupervise,
         args.num_tasks = 27
         args.num_train_tasks = 21
         args.num_test_tasks = 6
-
-    elif args.dataset == "Apache-par":
+    elif args.dataset == 'Apache-par':
         args.num_tasks = 11
         args.num_train_tasks = 8
         args.num_test_tasks = 3
@@ -132,4 +131,4 @@ def main(dataset, input_model_file, gnn_type, add_similarity, add_selfsupervise,
 
 if __name__ == "__main__":
     # dataset, pretrained_model, graph_model, taskaware_attention, edge_pred, atom_pred, weight, #support 
-    main("Apache-par", "model_gin/supervised_contextpred.pth", "gin", True, True, True, 0.1, 5)
+    main("Apache-par", "model_gin/supervised_contextpred.pth", "gin", False, False, False, 0.1, 16)
