@@ -1,0 +1,3 @@
+{'config': './config/adamaml_tri.json', 'root_directory': './experiments'}  2024-05-05 21:39:58
+
+Epoch(***Best***): 0000,loss_train: 1.077779,acc_train: 35.666667,acc_val:31.75 ¡À2.50,meta_lr: 0.001000,time: 95.08s,best 31.75  2024-05-05 21:41:34

@@ -1,0 +1,259 @@
+{'config': './config/adamaml_tri.json', 'root_directory': './experiments'}  2024-04-16 14:35:13
+
+Epoch(***Best***): 0000,loss_train: 1.089510,acc_train: 33.488889,acc_val:33.27 ¡À0.24,meta_lr: 0.001000,time: 165.55s,best 33.27  2024-04-16 14:37:58
+
+Epoch(***Best***): 0001,loss_train: 1.072679,acc_train: 37.133333,acc_val:40.14 ¡À1.67,meta_lr: 0.001000,time: 332.23s,best 40.14  2024-04-16 14:40:45
+
+Epoch(***Best***): 0002,loss_train: 1.013769,acc_train: 37.322222,acc_val:60.70 ¡À1.65,meta_lr: 0.001000,time: 499.78s,best 60.70  2024-04-16 14:43:32
+
+Epoch(***Best***): 0003,loss_train: 0.838659,acc_train: 47.344444,acc_val:62.40 ¡À1.80,meta_lr: 0.001000,time: 669.36s,best 62.40  2024-04-16 14:46:22
+
+Epoch(***Best***): 0004,loss_train: 0.927839,acc_train: 44.433333,acc_val:66.42 ¡À1.53,meta_lr: 0.001000,time: 837.64s,best 66.42  2024-04-16 14:49:10
+
+Epoch(***Best***): 0005,loss_train: 0.736050,acc_train: 58.966667,acc_val:66.98 ¡À1.50,meta_lr: 0.001000,time: 1007.66s,best 66.98  2024-04-16 14:52:00
+
+Epoch(***Best***): 0006,loss_train: 0.687733,acc_train: 60.722222,acc_val:70.31 ¡À1.50,meta_lr: 0.001000,time: 1176.87s,best 70.31  2024-04-16 14:54:50
+
+Epoch: 0007,loss_train: 0.702547,acc_train: 61.688889,acc_val:69.13 ¡À1.58,meta_lr: 0.001000,time: 1347.15s,best 70.31  2024-04-16 14:57:40
+
+Epoch: 0008,loss_train: 0.705635,acc_train: 58.711111,acc_val:70.06 ¡À1.54,meta_lr: 0.001000,time: 1516.36s,best 70.31  2024-04-16 15:00:29
+
+Epoch(***Best***): 0009,loss_train: 0.684132,acc_train: 62.711111,acc_val:70.96 ¡À1.55,meta_lr: 0.001000,time: 1687.41s,best 70.96  2024-04-16 15:03:20
+
+Epoch: 0010,loss_train: 0.680907,acc_train: 60.888889,acc_val:70.92 ¡À1.85,meta_lr: 0.001000,time: 1858.84s,best 70.96  2024-04-16 15:06:11
+
+Epoch(***Best***): 0011,loss_train: 0.683949,acc_train: 61.988889,acc_val:71.08 ¡À1.51,meta_lr: 0.001000,time: 2027.77s,best 71.08  2024-04-16 15:09:00
+
+Epoch: 0012,loss_train: 0.687323,acc_train: 61.500000,acc_val:68.40 ¡À1.52,meta_lr: 0.001000,time: 2198.82s,best 71.08  2024-04-16 15:11:51
+
+Epoch(***Best***): 0013,loss_train: 0.694849,acc_train: 59.211111,acc_val:71.18 ¡À1.43,meta_lr: 0.001000,time: 2368.64s,best 71.18  2024-04-16 15:14:41
+
+Epoch: 0014,loss_train: 0.664401,acc_train: 62.866667,acc_val:70.42 ¡À1.67,meta_lr: 0.001000,time: 2540.82s,best 71.18  2024-04-16 15:17:33
+
+Epoch: 0015,loss_train: 0.677574,acc_train: 61.655556,acc_val:70.04 ¡À1.53,meta_lr: 0.001000,time: 2712.57s,best 71.18  2024-04-16 15:20:25
+
+Epoch: 0016,loss_train: 0.687966,acc_train: 62.288889,acc_val:70.99 ¡À1.54,meta_lr: 0.001000,time: 2893.57s,best 71.18  2024-04-16 15:23:26
+
+Epoch(***Best***): 0017,loss_train: 0.690975,acc_train: 61.955556,acc_val:71.67 ¡À1.52,meta_lr: 0.001000,time: 3072.96s,best 71.67  2024-04-16 15:26:26
+
+Epoch: 0018,loss_train: 0.669384,acc_train: 63.300000,acc_val:70.73 ¡À1.65,meta_lr: 0.001000,time: 3251.53s,best 71.67  2024-04-16 15:29:24
+
+Epoch: 0019,loss_train: 0.666246,acc_train: 65.866667,acc_val:71.16 ¡À1.65,meta_lr: 0.001000,time: 3431.34s,best 71.67  2024-04-16 15:32:24
+
+Epoch: 0020,loss_train: 0.652278,acc_train: 65.366667,acc_val:71.13 ¡À1.81,meta_lr: 0.001000,time: 3609.48s,best 71.67  2024-04-16 15:35:22
+
+Epoch: 0021,loss_train: 0.662259,acc_train: 65.366667,acc_val:70.43 ¡À1.64,meta_lr: 0.001000,time: 3787.90s,best 71.67  2024-04-16 15:38:21
+
+Epoch: 0022,loss_train: 0.699007,acc_train: 57.955556,acc_val:71.32 ¡À1.48,meta_lr: 0.001000,time: 3967.51s,best 71.67  2024-04-16 15:41:20
+
+Epoch: 0023,loss_train: 0.668996,acc_train: 62.988889,acc_val:70.49 ¡À1.64,meta_lr: 0.001000,time: 4145.77s,best 71.67  2024-04-16 15:44:18
+
+Epoch(***Best***): 0024,loss_train: 0.671221,acc_train: 61.688889,acc_val:71.91 ¡À1.56,meta_lr: 0.001000,time: 4325.46s,best 71.91  2024-04-16 15:47:18
+
+Epoch: 0025,loss_train: 0.653289,acc_train: 64.333333,acc_val:71.19 ¡À1.67,meta_lr: 0.001000,time: 4504.01s,best 71.91  2024-04-16 15:50:17
+
+Epoch: 0026,loss_train: 0.670043,acc_train: 64.111111,acc_val:71.47 ¡À1.54,meta_lr: 0.001000,time: 4682.73s,best 71.91  2024-04-16 15:53:15
+
+Epoch(***Best***): 0027,loss_train: 0.646325,acc_train: 65.700000,acc_val:73.49 ¡À1.74,meta_lr: 0.001000,time: 4860.47s,best 73.49  2024-04-16 15:56:13
+
+Epoch: 0028,loss_train: 0.639100,acc_train: 66.955556,acc_val:70.83 ¡À1.58,meta_lr: 0.001000,time: 5038.66s,best 73.49  2024-04-16 15:59:11
+
+Epoch: 0029,loss_train: 0.665870,acc_train: 65.033333,acc_val:71.89 ¡À1.46,meta_lr: 0.001000,time: 5217.48s,best 73.49  2024-04-16 16:02:10
+
+Epoch: 0030,loss_train: 0.644132,acc_train: 65.833333,acc_val:73.23 ¡À1.59,meta_lr: 0.001000,time: 5395.99s,best 73.49  2024-04-16 16:05:09
+
+Epoch: 0031,loss_train: 0.636714,acc_train: 65.766667,acc_val:71.22 ¡À1.54,meta_lr: 0.001000,time: 5572.80s,best 73.49  2024-04-16 16:08:05
+
+Epoch: 0032,loss_train: 0.657568,acc_train: 64.344444,acc_val:71.63 ¡À1.69,meta_lr: 0.001000,time: 5750.93s,best 73.49  2024-04-16 16:11:04
+
+Epoch: 0033,loss_train: 0.662256,acc_train: 62.722222,acc_val:72.37 ¡À1.58,meta_lr: 0.001000,time: 5928.42s,best 73.49  2024-04-16 16:14:01
+
+Epoch: 0034,loss_train: 0.646374,acc_train: 64.800000,acc_val:73.27 ¡À1.62,meta_lr: 0.001000,time: 6107.71s,best 73.49  2024-04-16 16:17:00
+
+Epoch(***Best***): 0035,loss_train: 0.644027,acc_train: 65.055556,acc_val:73.81 ¡À1.70,meta_lr: 0.001000,time: 6285.86s,best 73.81  2024-04-16 16:19:58
+
+Epoch: 0036,loss_train: 0.661043,acc_train: 64.277778,acc_val:73.58 ¡À1.48,meta_lr: 0.001000,time: 6463.53s,best 73.81  2024-04-16 16:22:56
+
+Epoch: 0037,loss_train: 0.663817,acc_train: 65.033333,acc_val:71.91 ¡À1.67,meta_lr: 0.001000,time: 6640.86s,best 73.81  2024-04-16 16:25:53
+
+Epoch: 0038,loss_train: 0.667045,acc_train: 65.911111,acc_val:71.43 ¡À1.57,meta_lr: 0.001000,time: 6818.35s,best 73.81  2024-04-16 16:28:51
+
+Epoch: 0039,loss_train: 0.642473,acc_train: 67.111111,acc_val:71.70 ¡À1.69,meta_lr: 0.001000,time: 6997.90s,best 73.81  2024-04-16 16:31:51
+
+Epoch: 0040,loss_train: 0.660596,acc_train: 64.422222,acc_val:71.79 ¡À1.62,meta_lr: 0.001000,time: 7176.00s,best 73.81  2024-04-16 16:34:49
+
+Epoch: 0041,loss_train: 0.662995,acc_train: 62.488889,acc_val:72.83 ¡À1.64,meta_lr: 0.001000,time: 7355.25s,best 73.81  2024-04-16 16:37:48
+
+Epoch: 0042,loss_train: 0.671656,acc_train: 64.577778,acc_val:73.63 ¡À1.62,meta_lr: 0.001000,time: 7532.74s,best 73.81  2024-04-16 16:40:45
+
+Epoch: 0043,loss_train: 0.656947,acc_train: 66.122222,acc_val:72.21 ¡À1.56,meta_lr: 0.001000,time: 7711.00s,best 73.81  2024-04-16 16:43:44
+
+Epoch: 0044,loss_train: 0.653304,acc_train: 66.155556,acc_val:71.54 ¡À1.56,meta_lr: 0.001000,time: 7889.75s,best 73.81  2024-04-16 16:46:42
+
+Epoch: 0045,loss_train: 0.656508,acc_train: 66.777778,acc_val:72.29 ¡À1.66,meta_lr: 0.001000,time: 8068.45s,best 73.81  2024-04-16 16:49:41
+
+Epoch: 0046,loss_train: 0.635948,acc_train: 67.800000,acc_val:72.81 ¡À1.58,meta_lr: 0.001000,time: 8247.91s,best 73.81  2024-04-16 16:52:41
+
+Epoch: 0047,loss_train: 0.658161,acc_train: 64.800000,acc_val:70.37 ¡À1.58,meta_lr: 0.001000,time: 8426.90s,best 73.81  2024-04-16 16:55:40
+
+Epoch: 0048,loss_train: 0.654527,acc_train: 64.788889,acc_val:73.10 ¡À1.60,meta_lr: 0.001000,time: 8605.63s,best 73.81  2024-04-16 16:58:38
+
+Epoch: 0049,loss_train: 0.665550,acc_train: 64.544444,acc_val:73.57 ¡À1.59,meta_lr: 0.001000,time: 8784.98s,best 73.81  2024-04-16 17:01:38
+
+Epoch: 0050,loss_train: 0.630667,acc_train: 67.077778,acc_val:73.31 ¡À1.55,meta_lr: 0.001000,time: 8964.14s,best 73.81  2024-04-16 17:04:37
+
+Epoch(***Best***): 0051,loss_train: 0.659713,acc_train: 66.255556,acc_val:73.83 ¡À1.56,meta_lr: 0.001000,time: 9142.16s,best 73.83  2024-04-16 17:07:35
+
+Epoch: 0052,loss_train: 0.653170,acc_train: 65.855556,acc_val:71.83 ¡À1.77,meta_lr: 0.001000,time: 9321.09s,best 73.83  2024-04-16 17:10:34
+
+Epoch: 0053,loss_train: 0.667040,acc_train: 65.088889,acc_val:72.39 ¡À1.73,meta_lr: 0.001000,time: 9499.55s,best 73.83  2024-04-16 17:13:32
+
+Epoch: 0054,loss_train: 0.641471,acc_train: 66.944444,acc_val:71.32 ¡À1.50,meta_lr: 0.001000,time: 9678.94s,best 73.83  2024-04-16 17:16:32
+
+Epoch(***Best***): 0055,loss_train: 0.649595,acc_train: 61.711111,acc_val:74.99 ¡À1.73,meta_lr: 0.001000,time: 9857.51s,best 74.99  2024-04-16 17:19:30
+
+Epoch: 0056,loss_train: 0.630610,acc_train: 67.911111,acc_val:72.63 ¡À1.65,meta_lr: 0.001000,time: 10036.42s,best 74.99  2024-04-16 17:22:29
+
+Epoch: 0057,loss_train: 0.643928,acc_train: 66.566667,acc_val:72.76 ¡À1.60,meta_lr: 0.001000,time: 10214.51s,best 74.99  2024-04-16 17:25:27
+
+Epoch: 0058,loss_train: 0.640982,acc_train: 67.511111,acc_val:72.18 ¡À1.65,meta_lr: 0.001000,time: 10393.70s,best 74.99  2024-04-16 17:28:26
+
+Epoch: 0059,loss_train: 0.636544,acc_train: 66.544444,acc_val:72.06 ¡À1.65,meta_lr: 0.001000,time: 10572.34s,best 74.99  2024-04-16 17:31:25
+
+Epoch: 0060,loss_train: 0.653426,acc_train: 65.300000,acc_val:73.10 ¡À1.50,meta_lr: 0.001000,time: 10750.76s,best 74.99  2024-04-16 17:34:23
+
+Epoch: 0061,loss_train: 0.624094,acc_train: 67.511111,acc_val:73.44 ¡À1.67,meta_lr: 0.001000,time: 10929.87s,best 74.99  2024-04-16 17:37:23
+
+Epoch: 0062,loss_train: 0.630913,acc_train: 68.144444,acc_val:72.38 ¡À1.57,meta_lr: 0.001000,time: 11120.11s,best 74.99  2024-04-16 17:40:33
+
+Epoch: 0063,loss_train: 0.639303,acc_train: 68.222222,acc_val:72.39 ¡À1.69,meta_lr: 0.001000,time: 11298.30s,best 74.99  2024-04-16 17:43:31
+
+Epoch: 0064,loss_train: 0.649065,acc_train: 66.311111,acc_val:73.50 ¡À1.64,meta_lr: 0.001000,time: 11477.60s,best 74.99  2024-04-16 17:46:30
+
+Epoch: 0065,loss_train: 0.628179,acc_train: 67.877778,acc_val:71.70 ¡À1.59,meta_lr: 0.001000,time: 11655.80s,best 74.99  2024-04-16 17:49:28
+
+Epoch: 0066,loss_train: 0.655293,acc_train: 66.644444,acc_val:73.42 ¡À1.53,meta_lr: 0.001000,time: 11834.48s,best 74.99  2024-04-16 17:52:27
+
+Epoch: 0067,loss_train: 0.616506,acc_train: 68.033333,acc_val:72.77 ¡À1.64,meta_lr: 0.001000,time: 12012.99s,best 74.99  2024-04-16 17:55:26
+
+Epoch: 0068,loss_train: 0.625773,acc_train: 67.500000,acc_val:73.16 ¡À1.59,meta_lr: 0.001000,time: 12192.22s,best 74.99  2024-04-16 17:58:25
+
+Epoch: 0069,loss_train: 0.629729,acc_train: 66.611111,acc_val:74.19 ¡À1.47,meta_lr: 0.001000,time: 12371.35s,best 74.99  2024-04-16 18:01:24
+
+Epoch: 0070,loss_train: 0.584864,acc_train: 69.655556,acc_val:73.22 ¡À1.50,meta_lr: 0.001000,time: 12550.91s,best 74.99  2024-04-16 18:04:24
+
+Epoch: 0071,loss_train: 0.615088,acc_train: 67.288889,acc_val:71.56 ¡À1.73,meta_lr: 0.001000,time: 12730.23s,best 74.99  2024-04-16 18:07:23
+
+Epoch: 0072,loss_train: 0.581931,acc_train: 70.944444,acc_val:74.11 ¡À1.62,meta_lr: 0.001000,time: 12908.80s,best 74.99  2024-04-16 18:10:21
+
+Epoch(***Best***): 0073,loss_train: 0.611970,acc_train: 69.000000,acc_val:75.40 ¡À1.56,meta_lr: 0.001000,time: 13088.09s,best 75.40  2024-04-16 18:13:21
+
+Epoch: 0074,loss_train: 0.623401,acc_train: 68.900000,acc_val:72.01 ¡À1.67,meta_lr: 0.001000,time: 13266.64s,best 75.40  2024-04-16 18:16:19
+
+Epoch: 0075,loss_train: 0.587759,acc_train: 70.477778,acc_val:73.47 ¡À1.62,meta_lr: 0.001000,time: 13437.27s,best 75.40  2024-04-16 18:19:10
+
+Epoch: 0076,loss_train: 0.610422,acc_train: 68.422222,acc_val:73.76 ¡À1.61,meta_lr: 0.001000,time: 13605.80s,best 75.40  2024-04-16 18:21:58
+
+Epoch: 0077,loss_train: 0.587810,acc_train: 70.744444,acc_val:73.07 ¡À1.69,meta_lr: 0.001000,time: 13774.86s,best 75.40  2024-04-16 18:24:47
+
+Epoch: 0078,loss_train: 0.603665,acc_train: 69.855556,acc_val:73.71 ¡À1.73,meta_lr: 0.001000,time: 13944.58s,best 75.40  2024-04-16 18:27:37
+
+Epoch: 0079,loss_train: 0.601809,acc_train: 69.422222,acc_val:72.59 ¡À1.54,meta_lr: 0.001000,time: 14114.29s,best 75.40  2024-04-16 18:30:27
+
+Epoch: 0080,loss_train: 0.615889,acc_train: 66.466667,acc_val:73.08 ¡À1.62,meta_lr: 0.001000,time: 14284.58s,best 75.40  2024-04-16 18:33:17
+
+Epoch: 0081,loss_train: 0.571154,acc_train: 71.600000,acc_val:71.99 ¡À1.77,meta_lr: 0.001000,time: 14453.45s,best 75.40  2024-04-16 18:36:06
+
+Epoch: 0082,loss_train: 0.596701,acc_train: 71.133333,acc_val:73.26 ¡À1.69,meta_lr: 0.001000,time: 14622.58s,best 75.40  2024-04-16 18:38:55
+
+Epoch: 0083,loss_train: 0.604464,acc_train: 69.433333,acc_val:72.61 ¡À1.64,meta_lr: 0.001000,time: 14793.28s,best 75.40  2024-04-16 18:41:46
+
+Epoch: 0084,loss_train: 0.591384,acc_train: 71.011111,acc_val:73.14 ¡À1.62,meta_lr: 0.001000,time: 14962.22s,best 75.40  2024-04-16 18:44:35
+
+Epoch: 0085,loss_train: 0.606003,acc_train: 69.533333,acc_val:73.41 ¡À1.59,meta_lr: 0.001000,time: 15132.63s,best 75.40  2024-04-16 18:47:25
+
+Epoch: 0086,loss_train: 0.581217,acc_train: 70.533333,acc_val:72.32 ¡À1.85,meta_lr: 0.001000,time: 15302.14s,best 75.40  2024-04-16 18:50:15
+
+Epoch: 0087,loss_train: 0.589265,acc_train: 70.000000,acc_val:73.00 ¡À1.70,meta_lr: 0.001000,time: 15471.27s,best 75.40  2024-04-16 18:53:04
+
+Epoch: 0088,loss_train: 0.602881,acc_train: 70.000000,acc_val:73.21 ¡À1.75,meta_lr: 0.001000,time: 15640.28s,best 75.40  2024-04-16 18:55:53
+
+Epoch: 0089,loss_train: 0.601803,acc_train: 69.244444,acc_val:73.83 ¡À1.64,meta_lr: 0.001000,time: 15809.03s,best 75.40  2024-04-16 18:58:42
+
+Epoch: 0090,loss_train: 0.591001,acc_train: 69.755556,acc_val:73.26 ¡À1.58,meta_lr: 0.001000,time: 15978.02s,best 75.40  2024-04-16 19:01:31
+
+Epoch: 0091,loss_train: 0.602953,acc_train: 69.466667,acc_val:73.72 ¡À1.56,meta_lr: 0.001000,time: 16146.40s,best 75.40  2024-04-16 19:04:19
+
+Epoch: 0092,loss_train: 0.622081,acc_train: 67.322222,acc_val:73.61 ¡À1.61,meta_lr: 0.001000,time: 16315.46s,best 75.40  2024-04-16 19:07:08
+
+Epoch: 0093,loss_train: 0.601812,acc_train: 69.877778,acc_val:73.89 ¡À1.77,meta_lr: 0.001000,time: 16484.90s,best 75.40  2024-04-16 19:09:58
+
+Epoch: 0094,loss_train: 0.575201,acc_train: 71.411111,acc_val:72.32 ¡À1.69,meta_lr: 0.001000,time: 16652.99s,best 75.40  2024-04-16 19:12:46
+
+Epoch: 0095,loss_train: 0.595736,acc_train: 67.766667,acc_val:72.70 ¡À1.77,meta_lr: 0.001000,time: 16802.43s,best 75.40  2024-04-16 19:15:15
+
+Epoch: 0096,loss_train: 0.595413,acc_train: 66.555556,acc_val:73.63 ¡À1.62,meta_lr: 0.001000,time: 16950.89s,best 75.40  2024-04-16 19:17:44
+
+Epoch: 0097,loss_train: 0.595340,acc_train: 67.288889,acc_val:72.83 ¡À1.68,meta_lr: 0.001000,time: 17099.61s,best 75.40  2024-04-16 19:20:12
+
+Epoch: 0098,loss_train: 0.600481,acc_train: 67.455556,acc_val:74.19 ¡À1.72,meta_lr: 0.001000,time: 17247.66s,best 75.40  2024-04-16 19:22:40
+
+Epoch: 0099,loss_train: 0.601253,acc_train: 67.433333,acc_val:73.31 ¡À1.60,meta_lr: 0.001000,time: 17394.98s,best 75.40  2024-04-16 19:25:08
+
+Epoch: 0100,loss_train: 0.593183,acc_train: 67.388889,acc_val:74.40 ¡À1.56,meta_lr: 0.001000,time: 17542.20s,best 75.40  2024-04-16 19:27:35
+
+Epoch: 0101,loss_train: 0.604735,acc_train: 66.977778,acc_val:73.68 ¡À1.61,meta_lr: 0.001000,time: 17689.02s,best 75.40  2024-04-16 19:30:02
+
+Epoch: 0102,loss_train: 0.614640,acc_train: 66.433333,acc_val:73.37 ¡À1.82,meta_lr: 0.001000,time: 17837.02s,best 75.40  2024-04-16 19:32:30
+
+Epoch: 0103,loss_train: 0.591650,acc_train: 67.088889,acc_val:72.58 ¡À1.77,meta_lr: 0.001000,time: 17984.41s,best 75.40  2024-04-16 19:34:57
+
+Epoch: 0104,loss_train: 0.612808,acc_train: 67.355556,acc_val:72.61 ¡À1.67,meta_lr: 0.001000,time: 18131.86s,best 75.40  2024-04-16 19:37:24
+
+Epoch: 0105,loss_train: 0.590255,acc_train: 68.244444,acc_val:72.04 ¡À1.59,meta_lr: 0.001000,time: 18279.52s,best 75.40  2024-04-16 19:39:52
+
+Epoch: 0106,loss_train: 0.595287,acc_train: 66.644444,acc_val:72.86 ¡À1.64,meta_lr: 0.001000,time: 18427.14s,best 75.40  2024-04-16 19:42:20
+
+Epoch: 0107,loss_train: 0.635028,acc_train: 64.644444,acc_val:73.32 ¡À1.71,meta_lr: 0.001000,time: 18574.06s,best 75.40  2024-04-16 19:44:47
+
+Epoch: 0108,loss_train: 0.573410,acc_train: 67.588889,acc_val:73.51 ¡À1.73,meta_lr: 0.001000,time: 18722.20s,best 75.40  2024-04-16 19:47:15
+
+Epoch: 0109,loss_train: 0.603238,acc_train: 67.333333,acc_val:73.46 ¡À1.77,meta_lr: 0.001000,time: 18869.85s,best 75.40  2024-04-16 19:49:42
+
+Epoch: 0110,loss_train: 0.576619,acc_train: 69.477778,acc_val:74.00 ¡À1.55,meta_lr: 0.001000,time: 19017.79s,best 75.40  2024-04-16 19:52:10
+
+Epoch: 0111,loss_train: 0.573350,acc_train: 68.300000,acc_val:73.44 ¡À1.69,meta_lr: 0.001000,time: 19165.54s,best 75.40  2024-04-16 19:54:38
+
+Epoch: 0112,loss_train: 0.602263,acc_train: 68.855556,acc_val:72.71 ¡À1.66,meta_lr: 0.001000,time: 19326.88s,best 75.40  2024-04-16 19:57:20
+
+Epoch: 0113,loss_train: 0.597208,acc_train: 67.844444,acc_val:74.58 ¡À1.61,meta_lr: 0.001000,time: 19474.52s,best 75.40  2024-04-16 19:59:47
+
+Epoch: 0114,loss_train: 0.581123,acc_train: 68.300000,acc_val:72.82 ¡À1.73,meta_lr: 0.001000,time: 19623.58s,best 75.40  2024-04-16 20:02:16
+
+Epoch: 0115,loss_train: 0.574744,acc_train: 69.433333,acc_val:72.54 ¡À1.81,meta_lr: 0.001000,time: 19771.09s,best 75.40  2024-04-16 20:04:44
+
+Epoch: 0116,loss_train: 0.599862,acc_train: 67.466667,acc_val:73.67 ¡À1.67,meta_lr: 0.001000,time: 19918.88s,best 75.40  2024-04-16 20:07:12
+
+Epoch: 0117,loss_train: 0.598966,acc_train: 67.733333,acc_val:74.39 ¡À1.46,meta_lr: 0.001000,time: 20066.55s,best 75.40  2024-04-16 20:09:39
+
+Epoch: 0118,loss_train: 0.590723,acc_train: 68.733333,acc_val:73.20 ¡À1.69,meta_lr: 0.000500,time: 20214.14s,best 75.40  2024-04-16 20:12:07
+
+Epoch: 0119,loss_train: 0.563118,acc_train: 69.255556,acc_val:74.78 ¡À1.64,meta_lr: 0.000500,time: 20362.65s,best 75.40  2024-04-16 20:14:35
+
+Epoch: 0120,loss_train: 0.589976,acc_train: 68.677778,acc_val:73.16 ¡À1.63,meta_lr: 0.000500,time: 20511.50s,best 75.40  2024-04-16 20:17:04
+
+Epoch: 0121,loss_train: 0.573395,acc_train: 69.511111,acc_val:72.99 ¡À1.70,meta_lr: 0.000500,time: 20659.15s,best 75.40  2024-04-16 20:19:32
+
+Epoch: 0122,loss_train: 0.584325,acc_train: 70.122222,acc_val:73.23 ¡À1.68,meta_lr: 0.000500,time: 20808.91s,best 75.40  2024-04-16 20:22:02
+
+Epoch: 0123,loss_train: 0.586152,acc_train: 68.622222,acc_val:75.11 ¡À1.65,meta_lr: 0.000500,time: 20956.66s,best 75.40  2024-04-16 20:24:29
+
+Epoch: 0124,loss_train: 0.608574,acc_train: 67.877778,acc_val:72.62 ¡À1.81,meta_lr: 0.000500,time: 21104.84s,best 75.40  2024-04-16 20:26:57
+
+Epoch: 0125,loss_train: 0.582103,acc_train: 68.722222,acc_val:74.78 ¡À1.62,meta_lr: 0.000500,time: 21262.96s,best 75.40  2024-04-16 20:29:36
+
+Epoch: 0126,loss_train: 0.602410,acc_train: 70.133333,acc_val:73.12 ¡À1.67,meta_lr: 0.000500,time: 21429.15s,best 75.40  2024-04-16 20:32:22
+
+Epoch: 0127,loss_train: 0.570875,acc_train: 70.266667,acc_val:72.59 ¡À1.69,meta_lr: 0.000500,time: 21577.80s,best 75.40  2024-04-16 20:34:50
+
+Epoch: 0128,loss_train: 0.567768,acc_train: 70.766667,acc_val:73.96 ¡À1.73,meta_lr: 0.000500,time: 21741.02s,best 75.40  2024-04-16 20:37:34
