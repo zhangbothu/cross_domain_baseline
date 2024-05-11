@@ -51,7 +51,7 @@ def random_split(lst, ratios=None, seed=None):
 
 
 def preprocess(datasetname):
-    dir_ = './data/Apache-par'
+    dir_ = './data/' + datasetname
     if not os.path.exists(dir_):
         os.makedirs(dir_)
     entity_embeddings_path = os.path.join('./data/' + datasetname, "raw/entity_embeddings.pickle")
